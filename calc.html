@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <h1> CALCULATOR</h1>
+    <div class="body">
+        <p></p>
+        <div class="calc">
+           <input type="text" id="result" class="screen">
+        </div>
+        <!-- <div class="keys">
+            <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+            <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+            <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+             <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+        </div>
+         -->
+         <div class="keys">
+            <button class="button" onclick="display('1')">1 </button>
+            <button class="button" onclick="display('2')">2 </button>
+            <button class="button" onclick="display('3')">3 </button>
+            <button class="operator" data-action="add" onclick="display('+')"> +</button>
+            <br>
+            <button class="button" onclick="display ('4')">4 </button> 
+            <button class="button" onclick="display('5')">5 </button>
+            <button class="button" onclick="display('6')">6 </button>
+            <button class="operator" data-action="subtract" onclick="display('-')">-</button>
+            <br>
+            <button class="button" onclick="display('7')">7 </button>
+            <button class="button" onclick="display('8')"> 8</button>
+            <button class="button" onclick="display('9')"> 9</button>
+            <button class="operator" data-action="divide" onclick="display('/')"> /</button>
+            <br>
+            <button class="operator" data-action="multiply" onclick="display('*')"> *</button>
+            <button class="button" data-action="decimal" onclick="display('.')"> .</button>
+            <button class="button" onclick="display('0')"> 0</button>
+            <!-- <button class="button" data-action="percentage" onclick="display('0')">0 </button> -->
+            <button class="button key equal" data-action="calculate" onclick="solve()">= </button>
+            <br>
+            <!-- <button class="button" data-action="square" onclick="display('^')"> ^</button> -->
+            <button class="clear" id="result" style="text-align: center;" value="C" onclick="clearScreen()"> C</button>
+         </div>
+    </div>
+</body>
+</html>
